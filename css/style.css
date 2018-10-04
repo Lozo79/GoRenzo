@@ -92,63 +92,71 @@ margin: 122px 0 97px;
 #Philippines {
 padding: 80px 0 80px;
 background-color: #fff;
-}
-
-h3 {
-color: #033048;
-font-size: 43px;
-font-weight: 595;
-margin-bottom: 30px;
-}
-
-#benefits p, #benefits ul {
-width: 650px;
-color: #606161;
-}
-
-
-
-#Photos {
-top center #071324;
-padding: 90px 0 90px;
-color: whitesmoke;
-background-size: cover;
-}
-
-blockquote {
-font-size: 35px;
-font-weight: 250;
-text-align: center;
-font-style: italic;
-width: 625px;
-margin: 0 auto;
-color: lightgrey;
-}
-
-blockquote span {
-font-weight: 570;
-font-style: normal;
-display: block;
-color: white;
-}
-
-nav {
-background: #f9e42e;
-text-align: center;
-padding: 40px;
-}
-
-footer {
-background: #121212;
-text-align: center;
-padding: 75px 0 50px;
 
 }
 
 
-footer p {
-font-size: 20px;
-color: lightgrey;
-font-weight: 650;
+
+/* Photos */
+footer{
+height: 650px;
 }
+
+
+#island-type {
+  color: #6b6b6c;
+  font-size: 38px;
+  background: #fff;
+  border: 1px solid #111;
+  padding: 0px 30px;
+  display: inline-block;
+  width: 680px;
+  margin-right: 24px;
+  font-family: helvetica, arial, sans-serif;
+  height: 72px;
+  line-height: 74px;
+  vertical-align: middle;
+  box-shadow: #111 0 0 20px;
+}
+#submit-btn {
+  background: #ffe500;
+  color: #000;
+  font-size: 38px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #111;
+  text-align: center;
+  display: inline-block;
+  width: 250px;
+  height: 72px;
+  line-height: 74px;
+  vertical-align: middle;
+  box-shadow: #111 0 0 50px;
+  font-family: helvetica, arial, sans-serif;
+  cursor: pointer;
+}
+#submit-btn:hover {
+  background: #fff600;
+}
+
+.elnido {
+  background-image: url(../images/ElNido1.jpg)
+}
+.boracay {
+  background-image: url(../images/BoracaySunset.jpg)
+}
+.bohol {
+  background-image: url(../images/Bohol1.jpg)
+}
+.cebu {
+  background-image: url(../images/Cebu1.jpg)
+}
+.batan {
+  background-image: url(../images/BatanFest1.jpg)
+}
+
+
+
+
+
 

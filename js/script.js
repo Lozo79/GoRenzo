@@ -1,35 +1,24 @@
-// $.ready() to delay code execution until all the DOM data have been loaded
-$().ready(function() {
-    // Click "read more" and it shows more text
-    $('.readmore').click(function(){
-    $('#show-this-on-click').slideDown();
-    // Click it again and it hides the text
-    $('.readless').show();
-    $('.readmore').hide();
-      
-    event.preventDefault();
-
-    });
-    // Reverse the function above so that the text is hidden
-    $('.readless').click(function(){
-    $('#show-this-on-click').slideUp();
-    $('.readmore').show();
-    $('.readless').hide();
-    
-    event.preventDefault();
-
-    });
-    
-    // On the right panel click "learn More" to show more text
-    $('.learnmore').click(function(){
-    $('#learnmoretext').slideDown();
-    $('.learnmore').hide();
-    //   Prevent from submitting form
-    
-    event.preventDefault();
-
-    });
-
-
+var islands = ["ElNido", "Boracay", "Bohol", "Cebu", "Batan"];
+$(document).ready(function() {
+  for(i=0;i<islands.length;i++) {
+    $('#island-type').append('<option value="' + islands[i] + '">' + islands[i] + '</option>');
+  }
+  $('form').on('change', '#island-type',function(){
+    var island = $('#island-type').val();
+    if(city == 'ElNido') {
+      $('body').attr('class','elnido');
+    }
+    else if (island == 'Boracay') {
+      $('body').attr('class','boracay');
+    }
+    else if (island == 'Bohol') {
+      $('body').attr('class','bohol');
+    }
+    else if (island == 'Cebu') {
+      $('body').attr('class','cebu');
+    }
+    else if (island == 'Batan') {
+      $('body').attr('class','batan');
+    }
   });
-  
+});
