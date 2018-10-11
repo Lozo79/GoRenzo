@@ -33,12 +33,12 @@ clear: both;
 
 .alignright {
 float: right;
-padding: 0 0 10px 10px; /* note the padding around a right floated image */
+padding: 0 0 10px 10px; 
 }
 
 .alignleft {
 float: left;
-padding: 0 10px 10px 0; /* note the padding around a left floated image */
+padding: 0 10px 10px 0; 
 }
 
 /******************************************
@@ -50,28 +50,28 @@ padding: 0 10px 10px 0; /* note the padding around a left floated image */
     box-sizing: border-box;
 }
 
-/* Add a gray background color with some padding */
+
 body {
-    font-family: Arial;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     padding: 20px;
     background: #f1f1f1;
 }
 
-/* Header/Blog Title */
+
 .header {
     padding: 30px;
-    font-size: 40px;
+    font-size: 47px;
     color:whitesmoke;
     text-align: center;
     background: url(../images/clouds.jpg) no-repeat top center;
     background-size: cover;
 }
 
-/* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {   
     float: left;
     width: 75%;
+
 }
 
 /* Right column */
@@ -89,7 +89,24 @@ body {
   padding: 20px;
 }
 
-/* about me */
+h2 {
+  font-weight: 200;
+  font-size: 25px;
+  color: rgb(59, 58, 58);
+}
+
+.post p {
+  font-size: 20px;
+  line-height: 1.333;
+  color: #606161;
+}
+
+h3{
+  font-weight: 200;
+  font-size: 20px;
+  color: rgb(59, 58, 58);
+}
+
 .aboutme {
   background: url(../images/Lozo.jpg) no-repeat top center;
   background-size: cover;
@@ -97,27 +114,30 @@ body {
   height: 350px;
   width: 100%;
   padding: 20px;
-  
 
   
 }
 
-/* Fake image */
-.fakeimg {
+.me p {
+  font-size: 20px;
+  line-height: 1.333;
+  color: #606161;
+}
+
+.country {
     background-color: #aaa;
+    font-size: 15px;
     width: 100%;
     padding: 20px;
     
 }
 
-/* Add a card effect for articles */
 .card {
      background-color: white;
      padding: 20px;
      margin-top: 20px;
 }
 
-/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
@@ -156,18 +176,18 @@ body {
   border-radius: 0 3px 3px 0;
 }
 
-/* Position the "next button" to the right */
+/* place next button to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+
 .text {
   color: #111111;
   font-size: 15px;
@@ -178,7 +198,6 @@ body {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #0c0c0c;
   font-size: 12px;
@@ -187,7 +206,7 @@ body {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* Dots for the photos */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -221,10 +240,10 @@ body {
   to {opacity: 1}
 }
 
-/* Footer */
+
 .footer {
     padding: 20px;
-    font-size: 40px;
+    font-size: 47px;
     color:white;
     text-align: center;
     background: url(../images/clouds2.jpg) no-repeat top center;
@@ -232,14 +251,20 @@ body {
     margin-top: 20px;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout */
 @media screen and (max-width: 800px) {
     .leftcolumn, .rightcolumn {   
         width: 100%;
         padding: 0;
     }
 }
-</style>
+
+.instagram {
+  color:rgb(121, 42, 6);
+  text-decoration:underline;
+  cursor:pointer;
+
+
 
 
 
